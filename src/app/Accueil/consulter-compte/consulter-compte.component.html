@@ -1,0 +1,75 @@
+<header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow" style="height: 60px;background-color: #030303;">
+
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"><img src="assets/agilLogo.png" alt="logo" width="40px"
+   height="40px"style="border: 1px;box-shadow: 0px 1px 2px 2px orange; margin-left:20px; margin-top: -15px;display: inline-flex;"></a>
+  
+  
+
+</header>
+
+<div class="all">
+  <img src="assets/login.png" width="50%" height="100%" style="margin-top: 2em;margin-left: 25vh;">
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <form #loginform="ngForm" (ngSubmit)="onSubmit()">
+      <small class="text-danger">{{msg}}</small>
+      <div class="user-box">
+        <input type="text" name="userName" required="" [(ngModel)]="user.userName">
+        
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password" required="" [(ngModel)]="user.password">
+        <label>Password</label>
+      </div>
+      <div class="butt">
+      <a >
+       <button type="submit" style="background-color: transparent;border: none; color: yellow;"><span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         Login
+       </button>
+        
+      </a>
+    
+   </div>
+    </form>
+    
+  </div>
+<div style="height: 30.4em; margin-left: -80vh;">
+  <div class="pa">
+    <p><a href="/MotDePasseOublié" class="p" style="background-color: none;" data-toggle="modal" data-target="#userD" >Mot de passe oublié ?&ensp; </a> </p>
+    <div id="userD" class="modal fade" role="dialog">
+     <div class="modal-dialog">
+   
+       <!-- Modal content-->
+       <div class="modal-content" style="margin-top: 10em; background-color : black;">
+         <div class="modal-header">
+           <h4 class="modal-title" style=" color : yellow;">Récuperer le mot de passe </h4>
+           <button type="button" style="color: yellow;" class="close" data-dismiss="modal">&times;</button>
+          
+         </div>
+         <div class="modal-body" style="color : white" >
+           
+            <form>
+             <label>Tapez votre Adresse Email </label>
+             <input class ="mdp" type="text">
+            <button style="background-color:black ;" data-dismiss="modal"> <a style=" margin-top: 2em;" style="color:yellow ;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+               <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+             </svg> </a></button>
+            </form>
+           
+           
+         </div>
+         
+       </div>
+   
+     </div>
+   </div>
+ 
+    
+  </div>
+ </div>
+</div>
